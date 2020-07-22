@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.scrollbox{
+    float: left;
+    width: 80vw;
+    margin: 0;
+    padding: 0;
+}
+
+.fixedbox{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #362b2e;
+    color: #c76970;
+    position: fixed;
+    height: 100vh;
+    width: 20vw;
+    right: 0;
+}
+
+.scrollbox .hello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arizonia', cursive;
+    font-size: 20vw;
+    height: 100vh;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f0ff;
+    color: #231d1d;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.scrollbox .row .col-md-4 h1{
+    font-family: 'Baloo Da 2', cursive;
+    text-align: center;
+    font-size: 5vw;
+    letter-spacing: 1vw;
+}
+
+.box-container {
+    height: 100vh;
+    background-image: url("images/mountain.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.box{
+    height: 60vh;
+    width: 45vw;
+    background-color: #362b2e;
+    box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.2), 0px 0px 10px 2px rgba(255,255,255,0.4), 0px 0px 20px 10px rgba(199,105,112,0.6) ;
+}
+
+.box-workflow{
+    padding: 20px;
+    height: 75%;
+    width: 75%;
+    background-color: #362a2e;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 5px inset rgba(0,0,0,0.4), 0px 0px 50px 5px inset rgba(0,0,0,0.6);
+}
+
+.box-workflow:hover{
+    box-shadow:  0px 0px 20px 10px rgba(255,255,255,0.2), 0px 0px 50px 5px rgba(255,255,255,0.6);
+}
+
+.about-design{
+    font-size: 6vw;
+    font-family: 'Arizonia', cursive;
+    color: #c76970;
+}
+
+.education-text{
+    font-size: 12vw;
+    font-family: 'Arizonia', cursive;
+    color: #c76970;
+}
+
+.card{
+    background-color: #c76970;
+    color: white;
+    height: 20vh;
+    width: 100%;
+}
+
+.skills{
+    list-style-type: none;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 3vw;
+    color: white;
+    border-left: 1px solid #c76970;
+}
+
+.dwd-cv{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .scrollbox {
+      height: 100vh;
+      width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .fixedbox {
+    display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .box {
+      height: 50vh;
+      width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .skills {
+      font-size: 5vw;
+      text-align: center;
+      border-left: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .dwd-cv {
+      display: inline-block;
+    }
+}
